@@ -43,7 +43,16 @@ while True:
         break
 
 
-  Webcam is also similar to video cam just replace it with video location with the webcam number
+  A webcam is also similar to a video cam just replace it with video location with the webcam number and we can also re-size it using this 
+
+  img2.set(3,340)this is 3->width,340->width size
+img2.set(4,380)this  is 4->height,380->height size
+
+
+we can also change the brightness by using 
+
+img2.set(10,100) 10->is id for brightness 
+  
 
 
 
