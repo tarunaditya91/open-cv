@@ -52,7 +52,70 @@ img2.set(4,380)this  is 4->height,380->height size
 we can also change the brightness by using 
 
 img2.set(10,100) 10->is id for brightness 
-  
+
+# Basic Functions
+
+
+  Now first thing we will do that to convert it into gray scale
+
+  first you have to import cv2
+
+  and use a function cvtColor() function  .for creating a image we use rgb but in cv2 it is bgr to covert it into gray we use the following code 
+
+  import cv2
+
+img=cv2.imread('images.jpg')
+
+imgGray=cv2.cvtColor(img,cv2.COLOR_BGRA2GRAY)
+imgblur=cv2.GaussianBlur(imgGray,(7,7),0)
+
+cv2.imshow('imgGray',imgGray)
+cv2.imshow('imgblur',imgblur)
+cv2.waitKey(0)
+
+![image](https://github.com/tarunaditya91/open-cv/assets/113850656/51d19746-2856-4245-8710-f4f93fb93a7d)
+
+
+Next we work on canny edge dettection 
+
+imgcanny=cv2.Canny(img,100,100)
+
+![image](https://github.com/tarunaditya91/open-cv/assets/113850656/ebf5fa7e-174d-46ab-b570-31a79dbff8f7)
+
+to reduse the edges change the threshold values
+
+imgcanny=cv2.Canny(img,150,250)
+you can seethe diffrence
+![image](https://github.com/tarunaditya91/open-cv/assets/113850656/61057c22-dead-4d99-9079-600926d43f28)
+
+Dilation -> some times the edges are not connected we can increase the thickness useing dilation
+
+KERNAL IS NOTING BUT A MATRIX VALUE WHICH WE HAV TO EEFINE MATRIX VALUE AND SIZE FOR THIS WE NEED THE MATRIX VALUE AS ONE 
+
+
+For doing this we need numpy which we have to import it 
+
+
+np.uint8 refers to an 8-bit unsigned integer data type in the NumPy library in Python. It stands for "NumPy unsigned integer 8-bit". This data type can represent integers ranging from 0 to 255. It is commonly used for storing image data, especially in grayscale images, where pixel values typically range from 0 (black) to 255 (white).
+
+Now we have to create s Kernal =np.onse((5,5),np.unit8)
+
+image after applying Dialation
+![image](https://github.com/tarunaditya91/open-cv/assets/113850656/27744c94-970b-4611-a832-bb8592468256)
+
+
+The next function is Erode
+
+Erode is the reverse process of Dialation 
+
+imgEroded=cv2.erode(imgDialation,kernal,iterations=1)
+
+![image](https://github.com/tarunaditya91/open-cv/assets/113850656/165999c8-48f3-4aed-87fd-eaa296ecada8)
+
+# Resizeing_and_cropping
+
+
+
 
 
 
