@@ -116,6 +116,47 @@ imgEroded=cv2.erode(imgDialation,kernal,iterations=1)
 # Resizeing_and_cropping
 opencv convention 
 
+imgresize=cv2.resize(img(200,300)) first width and then height
+
+![image](https://github.com/tarunaditya91/open-cv/assets/113850656/cbc9c2bd-d666-4ff3-9b60-3443d9427b08)
+
+in open cv fuction width will come first then height
+
+for croping we wont need cv2 we cann do it useing matrix 
+![image](https://github.com/tarunaditya91/open-cv/assets/113850656/8eb945f9-de02-49b1-8c0a-e1a2bb461590)
+
+imgcrop=img[0:300,50:100]
+# Chapter 4
+SHAPES_AND_TEXT
+
+cv2.line(img,(0,0),(300,300),(0,255,0),3) for drawing a line 
+
+
+![image](https://github.com/tarunaditya91/open-cv/assets/113850656/cad4d274-d5a7-4326-add6-3d4ddb1f4df3)
+
+cv2.rectangle(imgr,(0,0),(200,200),(0,0,255),3) for drawing rectangle
+
+
+![image](https://github.com/tarunaditya91/open-cv/assets/113850656/452a8719-dbdb-47a9-8b5e-a7aaaa6f77ca)
+
+cv2.rectangle(imgr,(0,0),(200,200),(0,0,255),cv2.FILLED)
+
+![image](https://github.com/tarunaditya91/open-cv/assets/113850656/4ecf0026-a7f2-4a49-8945-0c0c33ea9b5d)
+
+cv2.circle(imgr,(150,150),8,(255,0,0),cv2.FILLED)
+
+
+![image](https://github.com/tarunaditya91/open-cv/assets/113850656/bfd9ba2e-402e-4d22-962f-56f1b719d88e)
+
+cv2.putText(imgr,"opencv text",(200,100),cv2.FONT_HERSHEY_PLAIN,1,(0,150,0),1)
+
+![image](https://github.com/tarunaditya91/open-cv/assets/113850656/3179cdd3-7733-4015-9df7-5e886dfc7584)
+
+
+
+
+
+
 
 
 
