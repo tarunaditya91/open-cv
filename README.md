@@ -153,6 +153,61 @@ cv2.putText(imgr,"opencv text",(200,100),cv2.FONT_HERSHEY_PLAIN,1,(0,150,0),1)
 ![image](https://github.com/tarunaditya91/open-cv/assets/113850656/3179cdd3-7733-4015-9df7-5e886dfc7584)
 
 
+# chapter 5
+WARP_PERSPECTIVE
+
+![image](https://github.com/tarunaditya91/open-cv/assets/113850656/bfa5f40b-9017-4d99-863d-70d5d104a5b5)
+
+# cHAPTER 6 
+JOINING_IMAGES
+
+import numpy as np
+import cv2
+
+img=cv2.imread('images.jpg')
+
+imghor=np.hstack((img,img))
+imgver=np.vstack((img,img))
+
+cv2.imshow("horizontal",imghor)
+cv2.imshow("vertical",imgver)
+cv2.waitKey(0)
+
+![image](https://github.com/tarunaditya91/open-cv/assets/113850656/1de41c09-27df-475c-b4e4-f7df567218bd)
+
+
+![image](https://github.com/tarunaditya91/open-cv/assets/113850656/42c5e5fc-421a-4c72-969e-971ab880f849)
+
+#Chapter 7
+COLOR_DETECTION
+
+imghsv=cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
+
+![image](https://github.com/tarunaditya91/open-cv/assets/113850656/e088070b-9c10-4a6c-82a6-2670290c1054)
+
+We are creating a trackbar
+
+first, we have to create a named window then we have to resize the window  then from cv2 use the function createTrackbar first enter the value you want then the window name starting and ending, then a function
+
+
+![image](https://github.com/tarunaditya91/open-cv/assets/113850656/e94886fb-5380-478b-b060-01246e0145af)
+
+
+
+
+
+
+![image](https://github.com/tarunaditya91/open-cv/assets/113850656/2da25e52-a536-4c33-8ea7-f78339eb1ab6)
+
+
+![image](https://github.com/tarunaditya91/open-cv/assets/113850656/0e9ec8e8-94d9-4492-ab06-e37d4be20713)
+
+
+# Chapter 8
+ CONTOURS/SHAPE DETECTION
+
+
+ ![image](https://github.com/tarunaditya91/open-cv/assets/113850656/65e89f60-209d-40b5-99d5-e0b4ad4b299c)
 
 
 
