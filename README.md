@@ -112,7 +112,10 @@ imgEroded=cv2.erode(imgDialation,kernal,iterations=1)
 
 ![image](https://github.com/tarunaditya91/open-cv/assets/113850656/165999c8-48f3-4aed-87fd-eaa296ecada8)
 
+# chapter 3
 # Resizeing_and_cropping
+opencv convention 
+
 
 
 
